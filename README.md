@@ -2,7 +2,7 @@
 ### Instalación
 
 1. **Descarga el ejecutable**
-   - Descarga `EditorWordMasivo.exe` desde la carpeta `/releases`
+   - Descarga `EditorWordMasivo.exe` [![Latest Release](https://img.shields.io/github/v/release/rosafg/word-editor?label=Descargar%20%C3%BAltima%20versi%C3%B3n)](https://github.com/rosafg/word-editor/releases/latest)
    
 2. **Ejecuta la aplicación**
    - Doble clic en el archivo `.exe`
