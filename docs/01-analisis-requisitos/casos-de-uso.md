@@ -1,4 +1,4 @@
-# 🎯 Casos de Uso
+#  Casos de Uso
 
 ## UC01 - Cargar archivos Word
 **Actor:** Usuario  
