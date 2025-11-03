@@ -1,0 +1,27 @@
+# 1. Entornos Virtuales
+# Nunca subas tu entorno virtual
+venv/
+.venv/
+
+# 2. Archivos de Build y Ejecutables
+# Generados por herramientas como PyInstaller
+build/
+dist/
+*.exe
+*.spec
+
+# 3. Caché de Python y archivos compilados
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 4. Archivos de configuración de IDE (Recomendado)
+# Para ignorar la configuración local de tu editor
+.vscode/
+.idea/
+
+# 5. Archivos de entorno y logs (¡IMPORTANTE!)
+# Nunca subas contraseñas o claves API
+.env
+*.log

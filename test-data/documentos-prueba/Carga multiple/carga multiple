@@ -1,0 +1,23 @@
+2.2 Archivos para Carga Múltiple
+2.2.1 Set de 3 Documentos
+Propósito: Pruebas de carga múltiple y navegación
+doc1.docx:
+DOCUMENTO UNO
+
+Este es el primer documento de un conjunto de tres archivos.
+El contenido de este documento es único y distintivo.
+La palabra clave es: PRIMERO
+doc2.docx:
+DOCUMENTO DOS
+
+Este es el segundo documento del conjunto de pruebas.
+El contenido de este archivo es diferente al primero.
+La palabra clave es: SEGUNDO
+doc3.docx:
+DOCUMENTO TRES
+
+Este es el tercer documento del grupo de archivos de prueba.
+El contenido final completa el conjunto de pruebas.
+La palabra clave es: TERCERO
+Casos de prueba asociados: TC-002, TC-006
+Uso: Verificar carga múltiple, navegación y que no se mezcle el contenido
