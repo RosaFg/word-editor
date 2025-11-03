@@ -1,5 +1,5 @@
 BUG-001: Reemplazo Selectivo No Aplica Cambios Correctamente en Múltiples Coincidencias
-📋 Información General
+ Información General
 
 ID: BUG-001
 Fecha de Reporte: 22/10/2025
@@ -9,7 +9,7 @@ Versión: v1.0
 Estado: 🔴 Abierto
 Archivo de Código: word_editor_massive.py, línea 123-146
 
-🎯 Severidad y Prioridad
+Severidad y Prioridad
 
 Severidad: 🟡 Media
 
@@ -24,7 +24,7 @@ Debe corregirse en próxima versión
 Afecta experiencia de usuario
 
 
-📝 Descripción
+ Descripción
 Al utilizar la función "Reemplazar" (reemplazo selectivo) para buscar y reemplazar texto, cuando existen múltiples coincidencias en el mismo párrafo, solo se aplica correctamente el primer reemplazo. Los reemplazos posteriores en el mismo párrafo fallan o reemplazan texto incorrecto debido a que los índices de posición se invalidan después del primer cambio.
 Ejemplo del problema:
 Texto original: "El cliente contactó al cliente principal"
@@ -34,7 +34,7 @@ Reemplazar por: "comprador"
 Resultado esperado: "El comprador contactó al comprador principal"
 Resultado obtenido: "El comprador contactó al cliente principal" 
                      ó texto corrupto/incorrecto
-🔄 Pasos para Reproducir
+ Pasos para Reproducir
 Precondiciones:
 
 Tener un archivo .docx con un párrafo que contenga múltiples instancias de la misma palabra
@@ -109,7 +109,7 @@ for idx, (p_idx, start, end, text) in enumerate(matches, start=1):
     if answer:
         para = doc.paragraphs[p_idx]
         para.text = para.text[:start] + replace_text + para.text[end:]  # ❌ Índices obsoletos
-🖼️ Evidencias
+ Evidencias
 Screenshot 1: Estado Inicial
 [CAPTURA RECOMENDADA]
 - Mostrar documento con: "El cliente visitó al cliente"
@@ -139,7 +139,7 @@ Tamaño del archivo de prueba: 12 KB
 Número de párrafos: 1
 Coincidencias en el texto: 3 instancias de "cliente"
 
-💡 Solución Propuesta
+ Solución Propuesta
 Opción 1: Recalcular posiciones después de cada reemplazo
 pythondef replace_text_selective(self):
     # ... código inicial igual ...
@@ -195,7 +195,7 @@ Más simple y menos propensa a errores
 El usuario ve los cambios en tiempo real
 Evita problemas de índices obsoletos
 
-📌 Workaround (Solución Temporal)
+ Workaround (Solución Temporal)
 Mientras se corrige el bug, los usuarios pueden:
 
 Usar "Reemplazar Todo" si están seguros del cambio
@@ -214,7 +214,7 @@ Repetir hasta que no haya más coincidencias
 
 
 
-📊 Impacto
+ Impacto
 Usuarios Afectados:
 
 ✅ Todos los usuarios que utilicen la función "Reemplazar" (selectivo)
@@ -230,13 +230,13 @@ Corrección selectiva de errores ortográficos
 Actualización parcial de términos
 Revisión manual de cambios antes de aplicar
 
-🔗 Relación con Otros Bugs
+ Relación con Otros Bugs
 
 Relacionado con: BUG-002 (Historial de deshacer puede no reflejar todos los cambios)
 Bloqueado por: Ninguno
 Bloquea: Ninguno
 
-📝 Notas Adicionales
+ Notas Adicionales
 
 Este bug NO afecta la función "Reemplazar Todo" (línea 148-163)
 El bug existe desde la versión 1.0 (primera release)
