@@ -9,7 +9,7 @@ Versión: v1.0
 Estado: 🔴 Abierto
 Archivo de Código: word_editor_massive.py, línea 165-172
 
-🎯 Severidad y Prioridad
+ Severidad y Prioridad
 
 Severidad: 🟢 Baja
 
@@ -25,10 +25,10 @@ Comportamiento puede documentarse como "esperado"
 
 
 
-📝 Descripción
+ Descripción
 El historial de cambios para la función "Deshacer" se mantiene globalmente para todos los documentos cargados. Sin embargo, cuando el usuario navega entre documentos usando los botones "Anterior" y "Siguiente", el estado visual del documento puede no reflejar el historial guardado, causando confusión sobre qué cambios se deshicieron realmente.
 Además, el historial NO es específico por documento, lo que significa que deshacer cambios puede afectar documentos diferentes al que se está visualizando actualmente.
-🔄 Pasos para Reproducir
+ Pasos para Reproducir
 Precondiciones:
 
 Tener 2 o más archivos .docx disponibles
@@ -42,7 +42,7 @@ Verificar que se muestra el primer documento (doc1.docx)
 En "Buscar..." escribir una palabra que exista en doc1
 En "Reemplazar por..." escribir un texto diferente
 Hacer clic en "Reemplazar Todo"
-✅ Verificar que el texto cambió en doc1
+ Verificar que el texto cambió en doc1
 Hacer clic en botón "Siguiente >>" para ver doc2
 Verificar que se muestra doc2 (sin cambios, como se espera)
 Hacer clic en "Deshacer"
@@ -50,7 +50,7 @@ Observar el mensaje: "Cambio deshecho"
 Hacer clic en "<< Anterior" para volver a doc1
 Observar el documento doc1
 
-✅ Resultado Esperado
+ Resultado Esperado
 Opción A (comportamiento ideal):
 
 Al hacer clic en "Deshacer" mientras se ve doc2, el sistema debe indicar: "No hay cambios para deshacer en este documento"
@@ -106,7 +106,7 @@ Limitaciones:
 ❌ Pero si el cambio fue en otro documento, el usuario no lo ve inmediatamente
 ❌ El mensaje no indica en qué documento se deshizo el cambio
 
-🖼️ Evidencias
+Evidencias
 Screenshot 1: Antes de Deshacer
 [CAPTURA RECOMENDADA]
 - Vista de doc2.docx (sin cambios)
@@ -129,7 +129,7 @@ Versión: v1.0
 Documentos de prueba: 2 archivos .docx
 Tamaño: 10-15 KB cada uno
 
-💡 Solución Propuesta
+ Solución Propuesta
 Opción 1: Mejorar el mensaje de feedback
 pythondef undo(self):
     if len(self.history) > 1:
@@ -165,14 +165,14 @@ def undo(self):
 Opción 1 es rápida de implementar y mejora la UX inmediatamente
 Opción 2 requiere refactorización pero es la solución correcta
 
-📌 Workaround (Solución Temporal)
+ Workaround (Solución Temporal)
 Los usuarios pueden evitar confusión:
 
 No navegar entre documentos después de hacer cambios, hasta guardar
 Usar "Deshacer" inmediatamente después de cada cambio, antes de navegar
 Verificar todos los documentos después de usar "Deshacer" para confirmar qué cambió
 
-📊 Impacto
+ Impacto
 Usuarios Afectados:
 
 ✅ Solo usuarios que cargan múltiples archivos
@@ -193,7 +193,7 @@ Relacionado con: BUG-001 (el historial se usa en reemplazos selectivos)
 Bloqueado por: Ninguno
 Bloquea: Ninguno
 
-📝 Notas Adicionales
+ Notas Adicionales
 
 Este comportamiento puede documentarse como "por diseño" si se considera que el historial global es intencional
 La mayoría de usuarios probablemente usen la app con un solo documento a la vez
