@@ -1,4 +1,4 @@
-# 📋 Requisitos Funcionales
+#  Requisitos Funcionales
 
 1. El sistema debe permitir cargar uno o varios archivos `.docx`.
 2. El usuario debe poder buscar y reemplazar texto dentro de los documentos.
@@ -11,7 +11,7 @@
 
 ---
 
-# 📋 Requisitos No Funcionales
+# Requisitos No Funcionales
 1. El sistema debe ejecutarse en Windows y macOS.
 2. La aplicación debe manejar errores comunes (como archivos no encontrados).
 3. El reemplazo debe ser **insensible a mayúsculas y minúsculas**.
