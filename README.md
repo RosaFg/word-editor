@@ -49,7 +49,7 @@ Carga de 1 word
 
 ## 📝 Funciones Principales
 
-### 1️⃣ Cargar Documentos
+###  Cargar Documentos
 
 #### **Opción A: Cargar un Solo Archivo**
 
@@ -82,7 +82,7 @@ Carga de 1 word
 
 ---
 
-### 2️⃣ Buscar Texto
+###  Buscar Texto
 
 1. Escribe el texto a buscar en el campo **"Buscar..."**
 2. Las coincidencias se resaltarán automáticamente en **amarillo**
@@ -102,7 +102,7 @@ Resultado: Resalta "cliente", "Cliente", "CLIENTE"
 
 ---
 
-### 3️⃣ Reemplazar Texto
+###  Reemplazar Texto
 
 #### **Opción A: Reemplazo Selectivo** (Solo documento actual)
 
@@ -118,7 +118,7 @@ Resultado: Resalta "cliente", "Cliente", "CLIENTE"
      [Sí] [No]
      ```
 5. Haz clic en **Sí** para reemplazar o **No** para omitir
-6. ✅ Al finalizar, verás un mensaje: "Reemplazo selectivo completado"
+6.  Al finalizar, verás un mensaje: "Reemplazo selectivo completado"
 
 **Ejemplo práctico:**
 ```
@@ -168,7 +168,7 @@ Resultado: Todas las instancias se reemplazan en los 3 archivos
 
 ---
 
-### 4️⃣ Navegar Entre Documentos
+###  Navegar Entre Documentos
 
 **Solo disponible cuando cargas múltiples archivos**
 
@@ -186,7 +186,7 @@ Resultado: Todas las instancias se reemplazan en los 3 archivos
 
 ---
 
-### 5️⃣ Deshacer Cambios
+###  Deshacer Cambios
 
 **¿Cuándo usar?**
 - Después de un reemplazo incorrecto
@@ -205,7 +205,7 @@ Resultado: Todas las instancias se reemplazan en los 3 archivos
 
 ---
 
-### 6️⃣ Guardar Archivos
+###  Guardar Archivos
 
 **IMPORTANTE:** Los cambios NO son permanentes hasta que guardes
 
@@ -225,7 +225,7 @@ Resultado: Todas las instancias se reemplazan en los 3 archivos
 
 ---
 
-### 7️⃣ Limpiar Interfaz
+###  Limpiar Interfaz
 
 **¿Qué limpia este botón?**
 - Borra el área de texto
@@ -241,7 +241,7 @@ Resultado: Todas las instancias se reemplazan en los 3 archivos
 
 ---
 
-## 💡 Casos de Uso Prácticos
+##  Casos de Uso Prácticos
 
 ### **Caso 1: Corregir Error Ortográfico en 10 Documentos**
 
@@ -319,7 +319,7 @@ Resultado: Todas las instancias se reemplazan en los 3 archivos
    - ❌ Si cierras la app, pierdes el historial
    - ❌ Una vez guardado, no puedes deshacer
 
-### 🛡️ Buenas Prácticas
+###  Buenas Prácticas
 
 1. **Siempre haz respaldo**
    - Guarda una copia de los archivos originales antes de editar
@@ -371,14 +371,14 @@ Resultado: Todas las instancias se reemplazan en los 3 archivos
 
 ---
 
-## 📞 Soporte
+##  Soporte
 
 Si encuentras algún problema o tienes sugerencias:
 - Email: [rosafuegos@gmail.com]
 - Reporta bugs en: [GitHub Issues]
 ---
 
-## 📌 Resumen de Controles
+##  Resumen de Controles
 
 | Botón | Función |
 |-------|---------|
