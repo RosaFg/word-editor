@@ -19,7 +19,7 @@
 
 ---
 
-## 🖥️ Interfaz de la Aplicación
+##  Interfaz de la Aplicación
 
 ```
 ┌─────────────────────────────────────────────────────┐
@@ -47,7 +47,7 @@ Carga de 1 word
 
 ---
 
-## 📝 Funciones Principales
+##  Funciones Principales
 
 ###  Cargar Documentos
 
@@ -112,7 +112,7 @@ Resultado: Resalta "cliente", "Cliente", "CLIENTE"
 2. Escribe el texto nuevo en **"Reemplazar por..."**
 3. Haz clic en **"Reemplazar"**
 4. Para cada coincidencia encontrada:
-   - 📋 Aparecerá un diálogo preguntando:
+   -  Aparecerá un diálogo preguntando:
      ```
      ¿Reemplazar 'texto_original' en el párrafo X?
      [Sí] [No]
