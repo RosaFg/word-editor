@@ -301,23 +301,23 @@ Resultado: Todas las instancias se reemplazan en los 3 archivos
 
 ---
 
-## ⚠️ Advertencias Importantes
+##  Advertencias Importantes
 
-### ⛔ Limitaciones de la Aplicación
+###  Limitaciones de la Aplicación
 
 1. **Solo trabaja con texto plano**
-   - ❌ No preserva: negrita, cursiva, colores, subrayado
-   - ❌ No preserva: tablas, imágenes, gráficos
-   - ✅ Solo preserva: el texto y los saltos de línea
+   -  No preserva: negrita, cursiva, colores, subrayado
+   -  No preserva: tablas, imágenes, gráficos
+   -  Solo preserva: el texto y los saltos de línea
 
 2. **Formato del archivo**
-   - ✅ Solo acepta archivos `.docx` (Word moderno)
-   - ❌ No acepta: `.doc` (Word antiguo), `.pdf`, `.txt`
+   -  Solo acepta archivos `.docx` (Word moderno)
+   -  No acepta: `.doc` (Word antiguo), `.pdf`, `.txt`
 
 3. **Historial de cambios**
-   - ✅ Puedes deshacer durante la sesión
-   - ❌ Si cierras la app, pierdes el historial
-   - ❌ Una vez guardado, no puedes deshacer
+   -  Puedes deshacer durante la sesión
+   -  Si cierras la app, pierdes el historial
+   -  Una vez guardado, no puedes deshacer
 
 ###  Buenas Prácticas
 
